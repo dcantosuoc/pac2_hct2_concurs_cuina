@@ -166,6 +166,18 @@ body {
   background-color: $header-background-color;
 }
 
+.main__link {
+  font-weight: bold;
+  color: $link-text-color;
+  text-decoration: none;
+}
+
+.main__link:hover {
+  color: $link-active-text-color;
+  border-bottom-color: $link-active-text-color;
+  border-bottom-style: solid;
+}
+
 .footer {
   padding: 2rem;
   margin-top: 1.5rem;
@@ -175,13 +187,13 @@ body {
   background-color: $footer-background-color;
 }
 
-.main__link {
+.footer__link {
   font-weight: bold;
-  color: $link-text-color;
+  color: $link-invert-text-color;
   text-decoration: none;
 }
 
-.main__link:hover {
+.footer__link:hover {
   color: $link-active-text-color;
   border-bottom-color: $link-active-text-color;
   border-bottom-style: solid;
