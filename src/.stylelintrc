@@ -1,0 +1,25 @@
+{
+ "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order"
+ ],    
+    "rules": {
+        "declaration-no-important": true,
+        "length-zero-no-unit": true,
+        "unit-no-unknown": true,
+        "property-no-unknown": true,
+        "function-no-unknown": true,
+        "selector-anb-no-unmatchable": true,
+        "string-no-newline": true,
+        "function-calc-no-unspaced-operator": true,
+        "color-no-invalid-hex": true,
+        "block-no-empty": true,
+        "no-duplicate-at-import-rules": true,
+        "no-descending-specificity": true,
+        "declaration-block-no-duplicate-properties": true,
+        "font-family-no-duplicate-names": true,
+        "keyframe-block-no-duplicate-selectors": true,
+        "rule-empty-line-before": "always-multi-line",
+        "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+    }
+}

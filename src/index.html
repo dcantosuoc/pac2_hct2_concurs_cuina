@@ -1,27 +1,527 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon.png" />
+    <title>Visita Berlin</title>
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
   </head>
+
+  <include src="./views/header.html"></include>
+
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title"><i class="fa-solid fa-building-columns"></i>Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <main class="container">
+    <div class="flex-container">
+      <nav class="flex-container flex-container__nav">
+        <ul class="nav__menu-interior--ul nav__menu-interior--ul-li">
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#a1">Berlín, la ciudad</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#a2">Imprescidible visitar</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#s1">Puerta de Brandeburgo</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#s2">Gundestag</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#s3">Holocaust-Mahnmal</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#s4">Isla de los Museos</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#s5">East Side Gallery</a></li>
+          <li class="nav__menu-interior--ul-li"><a class="main__link" href="#s6">Alexanderplatz</a></li>
+        </ul>
+      </nav>
+    <div class="flex-container flex-container__div content">
+      <article id="a1">
+        <h1 class="title title__h1">Berlín, una ciudad inmersa en la historia</h1>
+        <p>Berlín, la tercera ciudad más visitada de la Unión Europea, está situada a 70 km de Polonia y es franqueada por los ríos Spree y Havel.
+           La etimología de Berlín proviene de las palabras berle o berlin. Significan tierra no cultivable o tierra deshabilitada debido a su terreno pantanoso. 
+           Berlín se caracteriza por tener una décima parte de la población originaria de otros países, siendo los turcos el grupo más representativo.
+           A esta lista le siguen los italianos, los polacos y los rusos.
+        </p>  
+        <p>Son precisamente los contrastes entre los edificios históricos y la arquitectura contemporánea, entre la tradición y la modernidad, los que distinguen a la ciudad. 
+           Las vistas de Berlín, desde la Puerta de Brandenburgo hasta la Cancillería Federal, cuentan la historia de toda una nación.
+           La capital alemana es también el hogar de todos los grandes edificios gubernamentales, incluyendo el histórico Reichstag, la sede del parlamento alemán.
+        </p>
+        <p>Berlín es la ciudad de las artes, los artistas y los museos. Más de 170 museos, incluida la mundialmente famosa Isla de los Museos, exhiben los tesoros del mundo. 
+           Importantes orquestas - como la internacionalmente aclamada Orquesta Filarmónica de Berlín - y sus tres grandes teatros de ópera con sus sensacionales producciones de ópera y 
+           ballet hacen de Berlín un El Dorado para los amantes de la música clásica de todo el mundo. Y los numerosos teatros, teatros de variedades, teatros de revista y numerosos 
+           cabarets proporcionan entretenimiento para todos los gustos.
+        </p>
+        <p>La famosa Kurfürstendamm, la elegante Friedrichstraße y las originales boutiques alrededor de Hackesche Höfe ofrecen innumerables oportunidades de compra. 
+           Berlín marca las últimas tendencias en cuanto a estilo de vida, música y arte. Inspirados por la exuberante creatividad, cada vez más artistas de todo el mundo vienen a Berlín, 
+           haciendo de la metrópoli uno de los lugares más excitantes de Europa. El cambio constante caracteriza a la animada y llena de energía metrópolis.
+        </p>
+        <p>Y sin embargo, Berlín también es una ciudad relajada con muchos espacios abiertos que te permiten respirar el aire. Berlín es la metrópoli más verde de Alemania con extensos parques,
+           bosques y lagos. En verano, la vida se desarrolla al aire libre: en los chiringuitos, cafés y en los cines y teatros al aire libre donde se disfruta del sol y de las cálidas noches de verano.
+        </p>
+        <h2 class="title title__h2">Localización</h2>
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603778015!2d13.259927460871095!3d52.50693861619848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerl%C3%ADn%2C%20Alemanya!5e0!3m2!1sca!2ses!4v1711966730748!5m2!1sca!2ses" 
+            class="location__map--iframe"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <figcaption>Localización</figcaption>
+        </figure>
+      </article>
+      <article id="a2">
+          <h1 class="title title__h1">Imprescindible visitar</h1>
+          <p>Berlín es una ciudad con tantos atractivos que es muy dificil hacer una selección. Todo lo importante que ha pasado en el mundo en el siglo XX no se puede explicar sin Berlín.</p>
+          <figure>
+            <picture>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg" type="image/jpg" media="(min-width: 992px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+              <source srcset="/src/assets/images/modern-skyline-berlin.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+              <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/modern-skyline-berlin.jpg" title="Skyline Berlín">
+            </picture>
+              <figcaption class="figure__fixcaption--landscape">
+                <p>Skyline de Berlín, Image by <a href="https://www.freepik.com/free-vector/modern-skyline-berlin_1928190.htm#query=berlin%20skyline&position=9&from_view=keyword&track=ais&uuid=d8adbf08-5107-4a8d-bf3c-cb7699783d02">Freepik</a></p>
+              </figcaption>
+          </figure>            
+          <section id="s1">
+            <h2 class="title title__h2">Puerta de Brandeburgo</h2>
+            <figure>
+                <picture>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/puerta_bradenburgo.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                  <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/puerta_bradenburgo.jpg" title="Puerta de Bradenburgo">
+             </picture>
+              <figcaption class="figure__figcaption--landscape">
+                  <p>Puerta de Brandeburgo</p>
+              </figcaption>
+          </figure>      
+            <p>
+              La Puerta de Brandeburgo (Brandenburger Tor) es una de las antiguas puertas de entrada a Berlín además de uno de los símbolos más importantes de la ciudad. 
+              En español el nombre más correcto es Puerta de Brandeburgo, aunque también se la conoce como Puerta de Brandemburgo o Brandenburgo.
+              Inaugurada en 1791 junto a la Pariser Platz, la Puerta de Brandeburgo es un símbolo del triunfo de la paz sobre las armas.
+              Se trata de una enorme construcción de 26 metros de alto que, con su estilo neoclásico, recuerda a las construcciones de la Acrópolis de Atenas.
+            </p>
+            <p>
+              En 1795, el monumento fue coronado con una cuadriga de cobre que representa a la Diosa de la Victoria en un carro tirado por cuatro caballos en dirección a la ciudad. 
+              La estatua que se puede ver hoy en día, es una copia hecha en Berlín oeste en 1969, ya que la original quedó destruida durante la Segunda Guerra Mundial.
+              Aunque la puerta tiene cinco entradas, desde su construcción hasta el año 1918, el paso central de la puerta sólo podía ser utilizado por miembros de la familia real y algunos pocos afortunados.
+            </p>
+            <h4 class="title title__h4">Localización Puerta de Brandeburgo</h4>
+            <div class="location">
+              <div class="location__adress">
+                <address>
+                  <p>Pariser Platz</p>
+                  <p>10117 Berlin, Alemania</p>
+                </address>
+              </div>
+              <div class="location__map">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4855.8962529353485!2d13.375129177010916!3d52.516277836504585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sPuerta%20de%20Brandeburgo!5e0!3m2!1ses!2ses!4v1712163631379!5m2!1ses!2ses"
+                  class="location__map--iframe"
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+          <section id="s2">
+            <h2 class="title title__h2">Gundestag (Sede del parlamento Alemán)</h2>
+            <figure>
+                <picture>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/parlamento_aleman.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                  <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/parlamento_aleman.jpg" title="Gundestag">
+             </picture>
+              <figcaption class="figure__figcaption--landscape">
+                  <p>Gundestag</p>
+              </figcaption>
+          </figure>      
+            <p>
+              La sede del Parlamento alemán se encuentra en el centro de Berlín, en el edificio del Reichstag. Con su cúpula moderna y destacada, el edificio histórico es uno de los atractivos 
+              más conocidos de la capital alemana. Junto con la participación del Bundesrat, que es la representación de los Länder o estados federados, 
+              el Bundestag Alemán vota todas las leyes de competencia nacional, o sea, de la Federación. En el edificio del Reichstag tienen lugar los debates, las deliberaciones y las votaciones ...
+            </p>
+            <p>
+              La visita de la azotea y de la cúpula del edificio del Reichstag es gratuita. Los visitantes del Bundestag Alemán deben registrarse con anterioridad. 
+              Bajo el siguiente <a href="https://www.bundestag.de/es/besuch/kuppel-inhalt-582412" hreflang="en">enlace</a> se puede realizar el registro online (en inglés).
+            </p>
+            <figure>
+              <picture>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/parlamento_aleman_01.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/parlamento_aleman_01.jpg" title="Gundestag">
+              </picture>
+              <figcaption class="figure__figcaption--landscape">
+                <p>Cúpula del Gundestag</p>
+              </figcaption>
+            </figure>
+            <h4 class="title title__h4">Localización Parlamento Alemán</h4>      
+            <div class="location">
+              <div class="location__adress">
+                <address>
+                  <p>Platz d. Republik 1</p>
+                  <p>10557 Berlin, Alemania</p>
+                </address>
+              </div>
+              <div class="location__map">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8373225076552!2d13.37311457701102!3d52.51828303635617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851bf334f7e59%3A0xaad3547f29a9ddbd!2sBundestag!5e0!3m2!1ses!2ses!4v1712163207169!5m2!1ses!2ses" 
+                  class="location__map--iframe"
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
+          </section>
+          <section id="s3">
+            <h2 class="title title__h2">Monumento a los judíos de Europa asesinados</h2>
+            <figure>
+                <picture>
+                  <source srcset="/src/assets/images/holocaust.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/holocaust.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                  <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/holocaust.jpg" title="Puerta de Bradenburgo">
+                </picture>
+                <figcaption class="figure__figcaption--landscape">
+                  <p>Holocaust-Mahnmal</p>
+                </figcaption>
+            </figure>      
+            <p>
+              El Monumento a los judíos de Europa asesinados (en alemán, Denkmal für die ermordeten Juden Europas), también conocido como Holocaust-Mahnmal o Monumento del holocausto, 
+              es un monumento que recuerda en Berlín a los judíos víctimas del holocausto. Forma parte del desarrollo de la cultura del recuerdo por parte del gobierno alemán, 
+              como una manera de hacerse responsable por los crímenes que dejaron los regímenes totalitarios en el país.
+            </p>
+            <p>
+              Fue diseñado por el arquitecto Peter Eisenman y por el ingeniero Buro Happold. Se trata de un campo inclinado de 19 000 metros cuadrados cubierto por una rejilla cuadriculada 
+              en la que están situadas 2711 estelas o losas de hormigón. Estas losas tienen unas dimensiones de 2,38 m de largo y 0,95 m de ancho, y varían en cuanto a su altura, 
+              desde los 0,2 m a los 4,8 m. De acuerdo con el proyecto de Eisenman, las estelas están diseñadas para producir una atmósfera incómoda y confusa, 
+              y todo el monumento busca representar un sistema supuestamente ordenado que ha perdido contacto con la razón humana. 
+            </p>
+            <p>
+              Con todo, en un folleto turístico oficial editado en 2005 por la Fundación del Monumento, se afirma que el diseño representa una aproximación radical al concepto tradicional 
+              de monumento funerario, en parte porque Eisenman no usa ningún tipo de simbolismo. Un subterráneo anexo denominado Ort der Information (Punto de información) 
+              contiene los nombres de todas la víctimas judías del holocausto conocidas, obtenidos del museo israelí Yad Vashem.
+            </p>
+            <h4 class="title title__h4">Localización del Holocaust-Mahnmal</h4>
+            <div class="location">
+              <div class="location__adress">
+                <address>
+                  <p>Cora-Berliner-Straße 1</p>
+                  <p>10117 Berlin, Alemania</p>
+                </address>
+              </div>
+              <div class="location__map">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.076719874552!2d13.376137777010806!3d52.51395063667694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c607196a5b%3A0x1434a79012ee5bc8!2sMonumento%20a%20los%20jud%C3%ADos%20de%20Europa%20asesinados!5e0!3m2!1ses!2ses!4v1712163479521!5m2!1ses!2ses" 
+                  class="location__map--iframe"
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+          <section id="s4">
+            <h2 class="title title__h2">Isla de los museos</h2>
+            <figure>
+                <picture>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/isla_museos_01.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                  <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/isla_museos_01.jpg" title="Isla de los Museos">
+                </picture>
+                <figcaption class="figure__figcaption--landscape">
+                  <p>Catedral de Berlín & Altes Museum (Isla de los museos)</p>
+                </figcaption>
+            </figure>      
+            <p>
+              La Isla de los Museos en Berlín es en su conjunto una magnífica obra de arte: Cinco edificaciones mundialmente famosas que conforman los museos de la época de los monarcas 
+              prusianos y la moderna Galería James Simon, que forman un conjunto espectacular, que ha sido galardonado en 1999 con el título de Patrimonio de la Humanidad de la UNESCO. 
+              En 1999, también se adoptó el llamado Plan Maestro de la Isla de los Museos, cuyo eje principal lo forma una conexión subterránea entre los edificios de los museos: el Paseo Arqueológico.
+            </p>
+            <h3 class="title title__h3">La isla de los 5 museos</h3>
+            <h4 class="title title__h4">Museo del Pérgamo</h4>
+            <p>
+              El Pergamonmuseum  de tres alas de Alfred Messel está cerrado desde octubre de 2023 por obras de renovación de gran envergadura. 
+              Presenta una Colección de Antigüedades Clásicas, el Museo del Cercano Oriente Antiguo y el Museo de Arte Islámico. 
+            </p>
+            <figure>
+              <picture>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/isla_museos_puerta_babilonia.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/isla_museos_puerta_babilonia.jpg" title="Puerta de Babilonia">
+              </picture>
+              <figcaption class="figure__figcaption--landscape">
+                <p>Puerta de Babilonia</p>
+              </figcaption>
+          </figure>     
+          <figure>
+            <picture>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg" type="image/jpg" media="(min-width: 992px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+              <source srcset="/src/assets/images/isla_museos_puerta_mercado.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+              <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/isla_museos_puerta_mercado.jpg" title="Puerta del Mercado de Mileto">
+            </picture>
+            <figcaption class="figure__figcaption--landscape">
+              <p>Puerta del Mercado de Mileto</p>
+            </figcaption>
+          </figure>     
+          <h4 class="title title__h4">Museo Bode</h4>
+            <p>
+              El Museum Bode está situado en la punta de la Isla de los Museos y ha sido objeto de una renovación integral desde 2005. En sus magníficas salas alberga una colección única de esculturas, 
+              que muestra obras desde la Edad Media hasta el siglo XIX, incluyendo obras de Donatello, Bernini y Canova.
+            </p>
+            <h4 class="title title__h4">Newues Museum</h4>
+            <p>
+              La reconstrucción y renovación del Neues Museum por el renombrado arquitecto David Chipperfield duró diez años. Desde su espectacular reapertura en 2009, 
+              el edificio ha albergado exposiciones seleccionadas del Museo Egipcio y la Colección de Papiros, el Museo de Historia Antigua y Temprana y la Colección de Antigüedades Clásicas. 
+              El mundialmente famoso busto de Nefertiti está expuesto en una sala especial octogonal debajo de la cúpula norte.
+            </p>
+            <figure>
+              <picture>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/isla_museos_nefertiti.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                <img class="container__image container__image--vertical" loading="lazy" src="/src/assets/images/isla_museos_nefertiti.jpg" title="Puerta de Babilonia">
+              </picture>
+              <figcaption class="figure__figcaption--vertical">
+                <p>Busto de Nefertiti</p>
+              </figcaption>
+          </figure>     
+          <h4 class="title title__h4">La Antigua Galería Nacional</h4>
+            <p>
+              Como un antiguo templo se eleva la Alte Nationalgalerie (Antigua Galería Nacional) por encima de la Isla de los Museos sobre su alto y escalonado pedestal. 
+              No se puede pasar por alto que los templos griegos sirvieron de modelo para el arquitecto Friedrich August Stüler. 
+              La Antigua Galería Nacional alberga pinturas y esculturas del Clasicismo, del Romanticismo, del Biedermeier, del Impresionismo y de los primeros años de la Edad Moderna.
+            </p>
+          <h4 class="title title__h4">Altes Museum</h4>
+            <p>
+              El edificio clasicista del Altes Museum diseñado por Karl Friedrich Schinkel en 1830 representó el primer museo de la isla. 
+              Por primera vez se mostraron al público las colecciones reales de arte en un edificio antiguo creado especialmente para la ocasión. 
+              Hoy en día, se exhiben innumerables obras maestras de la antigüedad clásica en la magnífica arquitectura con su amplia cúpula circular: 
+              esculturas, joyas, jarrones y monedas del arte griego y etrusco, así como del Imperio Romano.
+            </p>
+          <h4 class="title title__h4">Localización de la Isla de los Museos</h4>
+          <div class="location">
+            <div class="location__adress">
+              <address>
+                <p>Museumsinsel</p>
+                <p>Berlín, Alemania</p>
+              </address>
+            </div>
+            <div class="location__map">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4855.82856428401!2d13.396991149355431!3d52.516890317045075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851df3c8bcac7%3A0x936c396c9e126807!2sIsla%20de%20los%20Museos!5e0!3m2!1ses!2ses!4v1712164566865!5m2!1ses!2ses" 
+                class="location__map--iframe"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          </section>
+          <section id="s5">
+            <h2 class="title title__h2">East Side Gallery</h2>
+            <figure>
+                <picture>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/east_side_gallery_00.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                  <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/east_side_gallery_00.jpg" title="East Side Gallery, Beso entre hermanos">
+             </picture>
+              <figcaption class="figure__figcaption--landscape">
+                  <p>Beso entre hermanos, East Side Gallery</p>
+              </figcaption>
+          </figure>      
+            <p>
+              East Side Gallery es una galería de arte al aire libre situada sobre una sección de 1316 metros en la cara este del muro de Berlín, que fueron salvados del derribo con dicha finalidad. 
+              Está situada cerca del centro de Berlín, en la calle Mühlenstraße del distrito Friedrichshain-Kreuzberg, a lo largo de la rivera del río Spree. Se considera que es la galería de arte 
+              al aire libre de mayor longitud y duración del mundo.
+            </p>
+            <figure>
+              <picture>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_01.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/east_side_gallery_01.jpg" title="East Side Gallery">
+              </picture>
+              <figcaption class="figure__figcaption--landscape">
+                  <p>East Side Gallery</p>
+              </figcaption>
+            </figure>
+            <p>
+              La galería consta de 103 murales pintados por artistas de todo el mundo rindiendo homenaje a la libertad y documentando la euforia y esperanza por un mundo mejor que se produjeron 
+              con el fin de la guerra fría. Fue fundada tras la unión de dos asociaciones de artistas alemanas, la "Federal Association of Artists - BBK" y la "GDR - Artists Association". 
+              Los principales promotores fueron Bodo Sperling, Barbara Greul Aschanta, Jörg Kubitzki y David Monti.
+            </p>
+            <figure>
+              <picture>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                <source srcset="/src/assets/images/east_side_gallery_02.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/east_side_gallery_02.jpg" title="East Side Gallery">
+              </picture>
+              <figcaption class="figure__figcaption--landscape">
+                  <p>East Side Gallery</p>
+              </figcaption>
+            </figure>
+            <p>
+              En julio de 2006, con el fin de facilitar el acceso a río Spree, se movió una sección de 40 metros alejándola hacia el oeste, en paralelo a su posición original.
+            </p>
+            <h4 class="title title__h4">Localización de East Side Gallery</h4>
+            <div class="location">
+              <div class="location__adress">
+                <address>
+                  <p>Mühlenstraße</p>
+                  <p>10243 Berlin, Alemania</p>
+                </address>
+              </div>
+              <div class="location__map">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4857.098198460681!2d13.440737350000001!3d52.5054012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a847a6f5edaf4b%3A0xde9be97b4a912818!2sEast%20Side%20Gallery!5e0!3m2!1ses!2ses!4v1712162542393!5m2!1ses!2ses" 
+                  class="location__map--iframe"
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+          <section id="s6">
+            <h2 class="title title__h2">Alexanderplatz</h2>
+            <figure>
+                <picture>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?as=avif" type="image/avif" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?as=avif&width=400px" type="image/avif" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?as=avif&width=300px" type="image/avif" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?as=webp" type="image/webp" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?as=webp&witdth=400px" type="image/webp" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?as=webp&witdth=300px" type="image/webp" media="(max-width: 546px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg" type="image/jpg" media="(min-width: 992px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?width=400px" type="image/jpg" media="(min-width: 547px)"/>
+                  <source srcset="/src/assets/images/alexanderplatz.jpg?width=300px" type="image/jpg" media="(max-width: 546px)"/>
+                  <img class="container__image container__image--landscape" loading="lazy" src="/src/assets/images/alexanderplatz.jpg" title="Alexanderplatz">
+             </picture>
+              <figcaption class="figure__figcaption--landscape">
+                  <p>Alexanderplatz</p>
+              </figcaption>
+          </figure>      
+            <p>
+              La Alexanderplatz es una gran plaza ubicada en el centro de Berlín, cerca del río Spree y el Palacio Real de Berlín, entre otros edificios históricos. 
+              Originalmente se llamaba Ochsenmarkt o mercado del buey, y es uno de los centros neurálgicos de la ciudad, como Potsdamer Platz.
+            </p>
+            <p>
+              La plaza, llamada simplemente Alex por los berlineses, oficia también de centro de trasbordo de pasajeros. Está rodeada por varios edificios y estructuras de envergadura, 
+              como la Torre de telecomunicaciones de Berlín. En la misma Alexanderplatz se encuentran ubicados, entre otros, el Park Inn Hotel Berlín, el edificio más alto de la ciudad, 
+              y el Reloj Mundial, una gran estructura de metal que rota permanentemente y muestra la hora de todo el mundo.
+            </p>
+            <h4 class="title title__h4">Localización de Alexanderplatz</h4>
+            <div class="location">
+              <div class="location__adress">
+                <address>
+                  <p>Alexanderplatz</p>
+                  <p>10178 Berlin, Alemania</p>
+                </address>
+              </div>
+              <div class="location__map">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.6327705419976!2d13.4107310770112!3d52.52198463608224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1edb11286f%3A0x30fc01c366e4166e!2sAlexanderplatz!5e0!3m2!1ses!2ses!4v1712162607878!5m2!1ses!2ses" 
+                  class="location__map--iframe"
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
     <include src="./views/footer.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
   </body>
 </html>
+
+
+
