@@ -32,16 +32,18 @@
 
   .container--personal {
     width: 100%;
+    min-width: 400px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto;
+    container-type: inline-size;
     
-    @media (min-width: 576px) { max-width: 540px; }
-    @media (min-width: 768px) { max-width: 720px; }
-    @media (min-width: 992px) { max-width: 960px; }
-    @media (min-width: 1200px) { max-width: 1140px; }
-    @media (min-width: 1400px) { max-width: 1320px; }
+    @container (min-width: 576px) { max-width: 540px; }
+    @container (min-width: 768px) { max-width: 720px; }
+    @container (min-width: 992px) { max-width: 960px; }
+    @container (min-width: 1200px) { max-width: 1140px; }
+    @container (min-width: 1400px) { max-width: 1320px; }
   }
 
   .container__image--landscape {  width: 90%; }
@@ -82,7 +84,7 @@
 
   .container--flex {
     display: block;
-  
+
     @media (min-width: $min-width) {
       display: flex;
       justify-content: space-between;
