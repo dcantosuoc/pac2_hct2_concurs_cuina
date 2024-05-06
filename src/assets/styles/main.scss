@@ -3,6 +3,8 @@
  * Do not include SCSS code in this file.
  */
 
+ @layer bootstrap, basics, contenedores, titulos, vinculos, secciones, menus;
+
 /**
  * Import variables
  */
@@ -20,12 +22,22 @@
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 
+// Import all of Bootstrap's CSS
+@layer bootstrap {
+  @import "bootstrap/scss/bootstrap";
+}
+
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+
+@import "layouts/main";
+@import "layouts/card-location";
+@import "layouts/cite";
+@import "layouts/bootstrap";
 
 /**
  * Do NOT include anything else in this file!
