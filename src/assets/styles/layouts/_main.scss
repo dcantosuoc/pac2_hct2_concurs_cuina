@@ -23,6 +23,7 @@
 /***************************/
 
 @layer contenedores {
+  
   .container__image {
     display: block;
     height: auto;
@@ -87,16 +88,15 @@
 
     @media (min-width: $min-width) {
       display: flex;
-      justify-content: space-between;
       align-items: flex-end;
-      
+      justify-content: space-between;
     }
   }
   
   .container__social--flex {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
   }
   
@@ -149,11 +149,11 @@
   }
 
   .title__h1 {
-    font-size: 2.5rem;
-    line-height: 2.8rem;
-    font-weight: bold;
-    text-align: center;
     padding-bottom: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    text-align: center;
       
     @media (min-width: $min-width) {
       font-size: 2.2rem;
@@ -161,10 +161,10 @@
   }
 
   .title__h2 {
+    padding-bottom: 1.8rem;
     font-size: 1.8rem;
     line-height: 2rem;
-    padding-bottom: 1.8rem;
-      
+          
     @media (min-width: $min-width) {
       font-size: 2rem;
       line-height: 2.2rem;
@@ -173,9 +173,9 @@
   }
 
   .title__h3 {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
     padding-bottom: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;    
       
     @media (min-width: $min-width) {
       font-size: 1.8rem;
@@ -184,10 +184,11 @@
   }
 
   .title__h4 {
-    font-size: 1.4rem;
-    text-align: center;
-    line-height: 1.6rem;
     padding-bottom: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    
     
     @media (min-width: $min-width) {
       font-size: 1.6rem;
@@ -198,7 +199,6 @@
   .hr {
     opacity: 0;
   }
-
 
 }
 
@@ -247,10 +247,11 @@
 /***************************/
 
 @layer menus {
-  .nav__menu-superior {
-    text-align: center;
-    color: $header-text-color;
 
+  .nav__menu-superior {
+    color: $header-text-color;
+    text-align: center;
+    
     @media (min-width: $min-width) {
       text-align: left;
     }
@@ -258,12 +259,12 @@
   }
 
   .nav__menu-inferior {
-    text-align: center;
     color: $footer-text-color;
-
+    text-align: center;
+    
     @media (min-width: $min-width) {
-      text-align: center;
       justify-content: space-between;
+      text-align: center;      
     }
   }
 
@@ -274,10 +275,10 @@
     
     
   .nav__menu-superior--ul-li {
+    margin-left: -1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    line-height: 1.8;
-    margin-left: -1rem;
+    line-height: 1.8;    
 
     @media (min-width: $min-width) {
       display: inline-block;
@@ -292,52 +293,49 @@
   }
 }
 
-
 @supports (display:grid) {
   @media (min-width: $min-width-grid) {
     
     @layer contenedores {
 
       .container__main {
-        max-width: none;
-        padding: 0;
         display: grid;
-        grid-template-columns: 2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr) fit-content(20em) calc(5em + 1vw);
         grid-template-rows: 35vh 40vh 15vh 10vh;
+        grid-template-columns: 2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr) fit-content(20em) calc(5em + 1vw);
+        max-width: none;
+        padding: 0;        
+        
       }
 
       .hr {
-        grid-column: 4 / 6;
         grid-row: 2;
-        height: 6px;
-        background-color: $body-background-color;
+        grid-column: 4 / 6;
         width: 20ch;
+        height: 6px;        
+        background-color: $body-background-color;        
       }
   
       .about {
-        grid-column: 3 / 6;
-        grid-row: 2;
-        align-self: end;
-        background-color: $body-background-color;
         z-index: 1;
+        grid-row: 2;
+        grid-column: 3 / 6;
+        align-self: end;        
         padding: 3rem;
-        margin-bottom: auto;
         margin-top: auto;
-        border-radius: 4px;
-        box-shadow: 6px 6px rgba(200, 200, 200, 1.2);
+        margin-bottom: auto;        
         font-size: 1.5rem;
         line-height: 1.8rem;
-        
-        
+        background-color: $body-background-color;        
+        border-radius: 4px;
+        box-shadow: 6px 6px rgba(200, 200, 200, 1.2);                
       }
 
     }
 
-    
-      .title__h1 {
+     .title__h1 {
+        z-index: 2;  
+        grid-row: 1 / 2;  
         grid-column: 2 / 6;
-        grid-row: 1 / 2;
-        z-index: 2;
         padding-left: 0.25em;
         margin-bottom: initial;
         font-size: 2.5rem;
@@ -346,62 +344,61 @@
       .title__h2--vertical {
         grid-row: 1 / -1;
         grid-column: 6 / 7;
-        writing-mode: vertical-rl;
         margin-bottom: initial;
         color: $body-text-color;
+        writing-mode: vertical-rl;        
+        
       }
-
-     
+   
       .main__link--grid {
         grid-column: 5 / 6;
-        justify-self: end;
         align-self: center;
+        justify-self: end;
         margin-bottom: initial;
 
         &::before {
-          content: '';
           display: block;
-          height: 3px;
-          width: 1rem;
-          background-color: $link-text-color;
-          width: 14ch;
+          width: 16ch;
+          height: 3px;          
           margin-bottom: 1em;
+          content: '';        
+          background-color: $link-text-color;          
         }
       }
 
     @layer contenedores {
+
       .grid__image {
-        grid-column: 1 / 4;
         grid-row: 1 / 4;
+        grid-column: 1 / 4;        
         height: 100%;
-        object-fit: cover;
         margin: 0;
+        object-fit: cover;        
       }
 
       .grid__location {
-        grid-column: 1 / 1;
-        grid-row: 3 / 4;
         z-index: 2;
-        background: $body-background-color;
         display: flex;
+        grid-row: 3 / 4;
+        grid-column: 1 / 1;        
         margin: 0;
-        
+        background: $body-background-color;
 
         .grid__p {
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-          margin-left: auto;
-          margin-right: auto;
           width: fit-content;
+          margin-top: 1rem;
+          margin-right: auto;
+          margin-bottom: 1rem;                    
+          margin-left: auto;          
           text-align: center;
         }
       }
     }
 
       .grid__button {
-        grid-column: 2 / 3;
-        grid-row: 4 / 5;
         position: initial;
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;        
         padding: 1rem;
         margin-top: 1rem;
       }

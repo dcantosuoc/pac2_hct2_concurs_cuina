@@ -8,8 +8,7 @@
 
 import * as bootstrap from 'bootstrap';
 
-Array.from(document.querySelectorAll('.toast'))
-  .forEach(toastNode => new bootstrap.Toast(toastNode))
+
 
 /**
  * Write any other JavaScript below
@@ -19,3 +18,10 @@ Array.from(document.querySelectorAll('.toast'))
   const university = "UOC";
   console.log(`Hello, ${university}!`);
 } )();
+
+function dummy() {
+
+  Array.from(document.querySelectorAll('.toast'))
+  .forEach(toastNode => new bootstrap.Toast(toastNode))
+
+} 
